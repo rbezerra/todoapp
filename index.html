@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>todoApp</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script type="text/x-handlebars" data-template-name="todos">
+	  
+	
+		<section id="todoapp">
+			<header id="header">
+				<h1>todos</h1>
+				<input type="text" id="new-todo" placeholder="What needs to be done?" />
+			</header>
+
+			<section id="main">
+				<ul id="todo-list">
+					<li class="completed">
+						<input type="checkbox" class="toggle">
+						<label>Make a todo app</label><button class="destroy"></button>
+					</li>
+					<li>
+						<input type="checkbox" class="toggle">
+						<label>Get the money</label><button class="destroy"></button>
+					</li>
+					<li>
+						<input type="checkbox" class="toggle">
+						<label>fuck bitches</label><button class="destroy"></button>
+					</li>			
+				</ul>
+				<input type="checkbox" id="toogle-all">
+			</section>
+
+			<footer id="footer">
+				<span id="todo-count">
+					<strong>2</strong> todos left
+				</span>
+				<ul id="filters">
+					<li><a href="all">All</a></li>
+					<li><a href="active">Active</a></li>
+					<li><a href="completed">Completed</a></li>
+				</ul>
+				<button id="clear-completed">Clear completed(1)</button>
+			</footer>
+
+			<footer id="info">
+				<p>Double click to edit a todo</p>
+			</footer>
+		</section>
+
+	</script>
+
+	<script src="js/libs/jquery-1.10.2.js"></script>
+	<script src="js/libs/handlebars-1.1.2.js"></script>
+	<script src="js/libs/ember-1.7.0.js"></script>
+	<script src="js/libs/ember-data.js"></script>
+	<script src="js/application.js"></script>
+	<script src="js/router.js"></script>
+	<script src="js/models/todo.js"></script>
+</body>
+</html>
